@@ -8,7 +8,7 @@ int main(void)
     int height; // creates an integer variable, relative to the pyramid's height 
     do // guarantees a first iteration that prompts the user to specify the pyramid's height
     {
-        height = get_int("Please select the pyramid's height: "); // assigns a value to the variable height 
+        height = get_int("Please select the pyramid's height: "); // prompts the user to specify the pyramid's height
     }  
     while (height <= 0 || height > 8); // if the value assigned isn't positive, prompts the user again  
         
@@ -22,7 +22,8 @@ void hash(int number_hashes_row, int
           height_pyramid) // function that receives as inputs a specific row of the pyramid and the pyramid's height, and executes the printing of that same row 
 {    
     for (int j = 0; j < height_pyramid;
-         j++) // for each j column in the specified row, until it reaches the gap in the pyramid(the distance between the beginning of the row and the gap is the same for all rows, being a constant equivalent to the pyramid's height)
+         j++) // for each j column in the specified row, until it reaches the gap in the pyramid(the distance between the beginning of the row and the gap is 
+              // the same for all rows, being a constant equivalent to the pyramid's height)
     {
         if (j < height_pyramid - (number_hashes_row + 1)) // specific for each row, the initiation of the block printing differs
         {
