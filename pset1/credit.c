@@ -8,14 +8,23 @@ void total_last_digit(long card_number, int extension,
 int main(void)
 {
     long number_card = get_long("Enter a credit card number: "); // prompts the user to enter a credit card number 
+  
+    // initialization of the variable that has as assumption that the credit card is American Express (has 15 digits in total), assigning to it the first two 
+  	// most significant digits
     long american_exp = number_card / pow(10, 
-                                          13); // initialization of the variable that has as assumption that the credit card is American Express (has 15 digits in total), attributing to it the first two most significant digits
+                                          13); 
+  
+  	// initialization of the variable that has as assumption that the credit card is MasterCard (has 16 digits in total), assigning to it the first two most 
+  	// significant digits
     long mastercard = number_card / pow(10, 
-                                        14); // initialization of the variable that has as assumption that the credit card is MasterCard (has 16 digits in total), attributing to it the first two most significant digits
+                                        14); 
+    // initialization of the variable that has as assumption that the credit card is VISA (has 16 digits in total), assigning to it the first most significant digit
     long visa_1 = number_card / pow(10, 
-                                    15); // initialization of the variable that has as assumption that the credit card is VISA (has 16 digits in total), attributing to it the first most significant digit
+                                    15); 
+  
+    // initialization of the variable that has as assumption that the credit card is VISA (has 13 digits in total), assigning to it the first most significant digit
     long visa_2 = number_card / pow(10,
-                                    12); // initialization of the variable that has as assumption that the credit card is VISA (has 13 digits in total), attributing to it the first most significant digit
+                                    12); 
 
     if (american_exp == 34
         || american_exp == 
@@ -48,7 +57,8 @@ int main(void)
 
 void total_last_digit(long card_number, int extension, string card)
 {
-    // function that takes as inputs the number entered by the user (long card_number), its extension (int extension), and the apparent correspondence to the category of credit card considered in this program (string card). It doesn't return any output.
+    // function that takes as inputs the number entered by the user (long card_number), its extension (int extension), and the apparent correspondence to the category 
+    // of credit card (string card). It doesn't return any output.
 
     int sum_underlined = 0; // initialization of the variable that sums the values that are meant to be doubled
     int sum_other = 0; // initialization of the variable that sums the values that are meant to be directly added without multiplication 
