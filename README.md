@@ -11,7 +11,7 @@ be accessed through the [course website](https://cs50.harvard.edu/x/2020/), or d
   - [Mario](https://cs50.harvard.edu/x/2020/psets/1/mario/more/) - most challenging version
   - [Credit](https://cs50.harvard.edu/x/2020/psets/1/credit/)
  
-- [Problem Set 2](https://cs50.harvard.edu/x/2020/psets/2/): Arrays || [My projects]
+- [Problem Set 2](https://cs50.harvard.edu/x/2020/psets/2/): Arrays || [My projects](https://github.com/marianamourao-37/Harvard-CS50-Projects/tree/master/pset2)
   - [Readability](https://cs50.harvard.edu/x/2020/psets/2/readability/)
   - [Substitution](https://cs50.harvard.edu/x/2020/psets/2/substitution/)
   
